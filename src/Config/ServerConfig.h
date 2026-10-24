@@ -24,14 +24,14 @@ namespace ServerConfig {
 // ConnectServer: lista de servers y ocupación (F4/02), redirect al GameServer
 // (F4/03). Con puerto 0 no se usa: el cliente conecta directo al GameServer y el
 // select-server muestra una entrada fija.
-constexpr char           ConnectServerIP[]   = "mu.server-pups.space";
-constexpr unsigned short ConnectServerPort   = 44405;
+constexpr char           ConnectServerIP[]   = "turntable.proxy.rlwy.net";
+constexpr unsigned short ConnectServerPort   = 0;
 
 // GameServer: destino directo cuando no hay ConnectServer, y fallback si el
 // ConnectServer no responde. Con ConnectServer, el GameServer al que se salta lo
 // manda el server en el redirect F4/03 (sale de su ServerList.dat).
-constexpr char           GameServerIP[]      = "mu.server-pups.space";
-constexpr unsigned short GameServerPort      = 55901;
+constexpr char           GameServerIP[]      = "turntable.proxy.rlwy.net";
+constexpr unsigned short GameServerPort      = 33955;
 
 // Identidad del server (ver arriba). ClientVersion acepta "0.97.11" o "09711".
 constexpr char           CustomerName[]      = "MuLinux";
